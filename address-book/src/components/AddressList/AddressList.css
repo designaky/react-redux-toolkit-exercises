@@ -1,0 +1,145 @@
+.flex-column, .address-list__element, .Nav__item-wrapper, .Nav__container, .notification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row, .address-list__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-base, .address-list__element {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 6px 12px #fafafa;
+  border-radius: 20px;
+}
+
+.base-button, .address-list button {
+  color: #ffffff;
+  background: #009bc1;
+  border: none;
+  cursor: pointer;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.base__input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+.base__input:hover, .base__input:focus {
+  border: 1px solid #009688;
+  background-color: white;
+}
+
+.home-button {
+  margin-top: 20px;
+  padding: 2px 10px;
+}
+
+.notification {
+  position: absolute;
+  box-shadow: 0px 6px 12px #fafafa;
+  border-radius: 20px;
+  z-index: 10;
+  color: white;
+  left: 45%;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+  opacity: 90%;
+}
+.notification__success {
+  background-color: #009688;
+}
+.notification__error {
+  background-color: #c25b5b;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  background: #fafafa;
+  height: 100vh;
+}
+
+.Nav {
+  height: 100vh;
+  position: fixed;
+  background-color: #ffffff;
+  min-width: 72px;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  z-index: 200;
+}
+.Nav__container {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.Nav__brand {
+  margin: 40px 0;
+}
+.Nav__logo {
+  min-width: 40px;
+}
+.Nav__item-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 20vh;
+  justify-content: space-evenly;
+}
+.Nav__item {
+  list-style: none;
+}
+.Nav__link {
+  text-decoration: none;
+}
+.Nav__icons {
+  fill: #009bc1;
+}
+
+.home {
+  position: relative;
+  padding: 0 10vw;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.address-list {
+  width: 100%;
+}
+.address-list__wrapper {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.address-list__element {
+  height: 100%;
+  display: flex;
+  min-height: 240px;
+  max-width: 350px;
+  flex-direction: column;
+  margin: 1em;
+  padding: 2em;
+}
+.address-list button {
+  height: 45px;
+  margin-top: 32px;
+  max-width: 50%;
+  min-width: 150px;
+}
+.address-list span {
+  font-weight: 800;
+}

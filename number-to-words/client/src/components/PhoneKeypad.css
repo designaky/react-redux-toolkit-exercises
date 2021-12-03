@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+}
+.phone-keypad {
+  width: 400px;
+  display: grid;
+  grid-template-areas:
+    "btn__1 btn__2 btn__3"
+    "btn__4 btn__5 btn__6"
+    "btn__7 btn__8 btn__9"
+    "btn__star btn__0 btn__hash";
+}
+
+.btn__1 {
+  grid-area: btn__1;
+}
+.btn__2 {
+  grid-area: btn__2;
+}
+.btn__3 {
+  grid-area: btn__3;
+}
+.btn__4 {
+  grid-area: btn__4;
+}
+.btn__5 {
+  grid-area: btn__5;
+}
+.btn__6 {
+  grid-area: btn__6;
+}
+.btn__7 {
+  grid-area: btn__7;
+}
+.btn__8 {
+  grid-area: btn__8;
+}
+.btn__9 {
+  grid-area: btn__9;
+}
+.btn__0 {
+  grid-area: btn__0;
+}
+
+.phone-keypad__btn {
+  min-width: 130px;
+  min-height: 100px;
+  cursor: pointer;
+}
+
+.phone-screen {
+  margin-top: 50px;
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.phone-screen__output {
+  height: 40%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+  overflow: auto;
+}
+
+.phone-screen__output span {
+  max-height: 20px;
+}
+
+.phone-screen__suggestion-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+  padding: 10px;
+  background-color: rgba(189, 181, 181, 0.747);
+  height: 50%;
+}
+
+.phone-screen__suggestion-item {
+  background-color: rgba(93, 184, 93, 0.87);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+  max-height: 20px;
+}
+
+.phone-screen__output-pointer {
+  animation: pointerAnimation 0.5s linear infinite alternate;
+}
+
+@keyframes pointerAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}

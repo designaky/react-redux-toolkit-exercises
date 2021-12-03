@@ -1,0 +1,26 @@
+@import "./../../styles/App.scss";
+
+.add-address-form {
+  @extend .card-base;
+  @extend .flex-row;
+  flex-wrap: wrap;
+  button {
+    @extend .base-button;
+    padding: 7px;
+    margin: 1rem;
+    max-width: 170px;
+  }
+  div {
+    @extend .flex-column;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+
+  input {
+    @extend .base__input;
+    padding: 2px 2px 2px 10px;
+  }
+  label {
+    font-weight: 800;
+  }
+}
